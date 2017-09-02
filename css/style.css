@@ -345,7 +345,7 @@ i.fa-info-circle{
 	font-size: 12px;
 }
 .team-item-skills{
-	opacity: 1;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -391,7 +391,10 @@ i.fa-info-circle{
 
 @media (max-width: 1199px){
 	.team-item-skills{
-		padding: 10px;
+		padding: 20px 30px 40px;
+	}
+	.skills-text{
+		margin-bottom: 20px;
 	}
 }
 @media (max-width: 991px){
@@ -412,7 +415,7 @@ i.fa-info-circle{
 		margin: 5px 0;
 	}
 }
-@media (max-width: 767px){	
+@media (max-width: 767px){
 	.our-team{
 		margin-top: 50px;
 	}	
@@ -439,8 +442,8 @@ i.fa-info-circle{
 		margin-bottom: 5px;
 	}
 	.team-item-skills .progress{	
-		height: 20px;
-		margin: 15px 0;
+		height: 15px;
+		margin: 10px 0;
 	}
 }
 @media (max-width: 599px){
@@ -451,7 +454,7 @@ i.fa-info-circle{
 @media (max-width: 479px){
 
 	.team-item-skills{
-		margin: 5px;
+		margin: 5px 15px;
 	}
 	.team-item-skills .progress{	
 		height: 10px;
