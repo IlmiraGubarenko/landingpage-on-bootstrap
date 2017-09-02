@@ -345,7 +345,7 @@ i.fa-info-circle{
 	font-size: 12px;
 }
 .team-item-skills{
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -421,7 +421,7 @@ i.fa-info-circle{
 		margin: 0 auto;
 	}
 	.team-item-info{
-		padding: 5px 0 25px;	
+		padding: 15px 0 30px;
 	}
 	.team-item-skills{
 		margin: 35px 110px;
@@ -449,6 +449,7 @@ i.fa-info-circle{
 	}
 }
 @media (max-width: 479px){
+
 	.team-item-skills{
 		margin: 5px;
 	}
@@ -524,15 +525,15 @@ i.fa-info-circle{
 	.services-tabs .nav-tabs>li{
 		width: 50%;		
     }
-    .nav-tabs>li {    
-    	margin-bottom: 10px;
+    .nav-tabs>li+li {
+    	margin-bottom: 20px;
 	}
 	.nav-tabs li .icon {
-    	font-size: 30px;
+    	font-size: 40px;
 	}	
 	.services-tabs .nav-tabs li .tablist-title {    	
-    	margin-top: 8px;
-    	font-size: 12px;	
+    	margin-top: 10px;
+    	font-size: 16px;
 	}
     .services-tabs .tab-content .tab-pane{
     	padding-top: 25px;
@@ -640,6 +641,9 @@ i.fa-info-circle{
 	padding-bottom:80px;
 }
 @media (max-width: 767px){
+	.text-section-one{
+		text-align: center;
+	}
 	.start-project{	
 		margin-top: -85px;
 	}
@@ -663,7 +667,7 @@ i.fa-info-circle{
 .reviews .carousel-caption .title{
 	margin-bottom: 40px;
 }
-.reviews .carousel-caption .carousel-text{
+.active .carousel-caption>p{
 	font-size: 18px;
 	line-height: 1.6666;
 	max-width: 750px;
@@ -740,15 +744,15 @@ i.fa-info-circle{
 }
 
 @media (max-width: 991px){
-	.reviews .carousel-caption .carousel-text{
-		font-size: 16px;	
-		max-width: 550px;	
+	.reviews .carousel-caption>p{
+		font-size: 16px;
+		max-width: 550px;
 	}
 }
 @media (max-width: 767px){
-	.reviews .carousel-caption .carousel-text{
-		font-size: 16px;	
-		max-width: 400px;	
+	.reviews .carousel-caption>p{
+		font-size: 16px;
+		max-width: 400px;
 	}
 	.carousel-indicators {    
     	bottom: -100px;    
@@ -760,9 +764,8 @@ i.fa-info-circle{
 	}
 }
 @media (max-width: 479px){
-	.reviews .carousel-caption .carousel-text{
+	.reviews .carousel-caption>p{
 		font-size: 14px;
-	
 	}
 }
 
@@ -999,29 +1002,34 @@ i.fa-info-circle{
 	padding-bottom: 50px;	
 }
 .footer-img{
-	margin-bottom: 35px;
+	margin-bottom: 30px;
+}
+.footer .social-icon{
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #111;
 }
 .footer .social-icon li{
 	display: inline-block;
-	color: #111;
 	width: 25px;
 	height: 25px;
-	font-size: 14px;
-	background-color: #f8f8f8;
 	border: 1px solid #636363;
-	border-radius: 2px;
+	border-radius: 3px;
 	transform: rotate(45deg);
-	text-align: center;
-	line-height: 25px;	
-}	
+}
 .footer .social-icon li:hover{
 	opacity: .6;
 }
 .footer .social-icon li+li{	
-	margin-left: 12px;
+	margin-left: 15px;
 }
-.footer .social-icon .fa{	
-	transform: rotate(-45deg);	
+.footer .social-icon li>a{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 50%;
+	transform: translateY(-62%) rotate(-45deg);
 }
 .footer-sign{	
 	font-size: 12px;
